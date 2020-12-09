@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button tab="jornada" routerLink="./jornada">
+          <ion-icon name="football-outline"></ion-icon>
+          <ion-label>Jornada</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="clasificacion">
+          <ion-icon name="trophy-outline"></ion-icon>
+          <ion-label>Clasificacion</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <ion-label>JORNADA {{ jornadaActiva + 1 }}</ion-label>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="anterior">
+      <ion-label>Anterior</ion-label>
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="siguiente">
+      <ion-label>Siguiente</ion-label>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
